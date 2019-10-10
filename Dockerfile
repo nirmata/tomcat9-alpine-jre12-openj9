@@ -7,6 +7,7 @@ RUN apk -U upgrade --update && \
     wget -O /tmp/apache-tomcat.tar.gz https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
     tar -C /opt -xvf /tmp/apache-tomcat.tar.gz && \
     ln -s /opt/apache-tomcat-${TOMCAT_VERSION}/ /usr/local/tomcat && \
+    rm -rf /usr/local/tomcat/webapps/* && \
     rm -rf /tmp/apache-tomcat.tar.gz && \
     addgroup -g 2000 tomcat && \
     adduser -h /usr/local/tomcat -u 2000 -G tomcat -s /bin/sh -D tomcat && \

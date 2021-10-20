@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk12-openj9:x86_64-alpine-jre-12.0.2_10_openj9-0.15.1
 
-ENV TOMCAT_MAJOR=9 \
-    TOMCAT_VERSION=9.0.44
+ENV TOMCAT_MAJOR=10 \
+    TOMCAT_VERSION=10.0.12
 
 RUN apk -U upgrade --update && \
     wget -O /tmp/apache-tomcat.tar.gz https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \

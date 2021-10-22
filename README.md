@@ -1,7 +1,7 @@
-# tomcat10-alpine-jre12-openj9
+# tomcat9-alpine-jre12-openj9
 
 Dockerfile for creating an docker image with:
-  * Tomcat 10.0.12
+  * Tomcat 9.0.54
   * Alpine Linux 3.10
   * JRE 12.0.2
   * OpenJ9 JVM 0.15.1
@@ -13,13 +13,13 @@ The Dockerfile found in this project is licensed under the Apache License 2.0.
 ## Running
 
 ````bash
-docker pull nirmata/tomcat10-alpine-jre12-openj9
+docker pull nirmata/tomcat9-alpine-jre12-openj9
 ````
 
 ## Extending
 
 ````dockerfile
-FROM nirmata/tomcat10-alpine-jre12-openj9
+FROM nirmata/tomcat9-alpine-jre12-openj9
 
    ...
 

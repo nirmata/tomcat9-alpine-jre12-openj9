@@ -1,7 +1,7 @@
 # tomcat9-alpine-jre12-openj9
 
 Dockerfile for creating an docker image with:
-  * Tomcat 9.0.24
+  * Tomcat 9.0.54
   * Alpine Linux 3.10
   * JRE 12.0.2
   * OpenJ9 JVM 0.15.1
